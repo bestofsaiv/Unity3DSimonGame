@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{63678086-FC8B-0E60-69DC-4AF99E8F1D34}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oculus/SampleFramework/Editor/OculusSampleFrameworkUtil.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Android/AndroidManifest.xml">
     <Files>
-      <File FileName="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportInputHandlerAvatarTouch.cs" Line="278" Column="1" />
-      <File FileName="Assets/Oculus/Spatializer/editor/ONSPAudioPluginUpdater.cs" Line="257" Column="1" />
-      <File FileName="Assets/Oculus/SampleFramework/Editor/OculusSampleFrameworkUtil.cs" Line="43" Column="1" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,12 +12,12 @@
                 <Node name="SampleFramework" expanded="True">
                   <Node name="Core" expanded="True">
                     <Node name="Locomotion" expanded="True">
-                      <Node name="Scripts" expanded="True" />
+                      <Node name="Scripts" expanded="True">
+                        <Node name="TeleportInputHandlerAvatarTouch.cs" selected="True" />
+                      </Node>
                     </Node>
                   </Node>
-                  <Node name="Editor" expanded="True">
-                    <Node name="OculusSampleFrameworkUtil.cs" selected="True" />
-                  </Node>
+                  <Node name="Editor" expanded="True" />
                 </Node>
                 <Node name="Spatializer" expanded="True">
                   <Node name="editor" expanded="True" />
