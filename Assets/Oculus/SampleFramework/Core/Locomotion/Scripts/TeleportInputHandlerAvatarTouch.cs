@@ -17,16 +17,16 @@ using UnityEngine.Assertions;
 /// </summary>
 public class TeleportInputHandlerAvatarTouch : TeleportInputHandlerHMD
 {
-    /// <summary>
-    /// This needs to be assigned a reference to the OvrAvatar for the local player. The code will search for an avatar if this is null, but it's suggested to assign it in the editor.
-    /// </summary>
-    [Tooltip("This needs to be assigned a reference to the OvrAvatar for the local player. The code will search for an avatar if this is null, but it's suggested to assign it in the editor.")]
-    public GameObject Avatar;
+	/// <summary>
+	/// This needs to be assigned a reference to the OvrAvatar for the local player. The code will search for an avatar if this is null, but it's suggested to assign it in the editor.
+	/// </summary>
+	[Tooltip("This needs to be assigned a reference to the OvrAvatar for the local player. The code will search for an avatar if this is null, but it's suggested to assign it in the editor.")]
+	public OvrAvatar Avatar;
 
-    /// <summary>
-    /// The avatar touch input handler supports three different modes for controlling teleports.
-    /// </summary>
-    public enum InputModes
+	/// <summary>
+	/// The avatar touch input handler supports three different modes for controlling teleports.
+	/// </summary>
+	public enum InputModes
 	{
 		/// <summary>
 		/// Touching a capacitive button will start the aiming, and pressing that button will trigger the teleport.
@@ -114,7 +114,7 @@ public class TeleportInputHandlerAvatarTouch : TeleportInputHandlerHMD
 		if (Avatar == null)
 		{
 			Debug.LogWarning("Avatar not assigned. Searching hierarchy. Please configure the Avatar before running to improve performance.");
-			//Avatar = GameObject.FindObjectOfType<OvrAvatar>();
+			Avatar = GameObject.FindObjectOfType<OvrAvatar>();
 			Assert.IsNotNull(Avatar);
 		}
 	}
@@ -274,7 +274,7 @@ public class TeleportInputHandlerAvatarTouch : TeleportInputHandlerHMD
 		{
 			sourceController = InitiatingController;
 		}
-        Transform t = null;// (sourceController == OVRInput.Controller.LTouch) ? Avatar.ControllerLeft.transform : Avatar.ControllerRight.transform;
-        aimRay = new Ray(t.position, t.forward);
+		Transform t = (sourceController == OVRInput.Controller.LTouch) ? Avatar.ControllerLeft.transform : Avatar.ControllerRight.transform;
+		aimRay = new Ray(t.position, t.forward);
 	}
 }
