@@ -1,43 +1,14 @@
 ﻿<Properties StartupConfiguration="{63678086-FC8B-0E60-69DC-4AF99E8F1D34}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oculus/Avatar/Scripts/OvrAvatar.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SimonGame/GameCenter.cs">
     <Files>
-      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="21" Column="1" />
-      <File FileName="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportInputHandlerAvatarTouch.cs" Line="1" Column="1" />
-      <File FileName="Assets/Oculus/Avatar/Scripts/OvrAvatar.cs" Line="106" Column="1" />
+      <File FileName="Assets/Scripts/SimonGame/GameCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SimonGame/IGameResult.cs" Line="10" Column="2" />
+      <File FileName="Assets/Scripts/SimonGame/SimonGame.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Simon3DGame" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Oculus" expanded="True">
-                <Node name="Avatar" expanded="True">
-                  <Node name="Scripts" expanded="True">
-                    <Node name="OvrAvatar.cs" selected="True" />
-                  </Node>
-                </Node>
-                <Node name="SampleFramework" expanded="True">
-                  <Node name="Core" expanded="True">
-                    <Node name="Locomotion" expanded="True">
-                      <Node name="Scripts" expanded="True" />
-                    </Node>
-                  </Node>
-                  <Node name="Editor" expanded="True" />
-                </Node>
-                <Node name="Spatializer" expanded="True">
-                  <Node name="editor" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Plugins" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ef0f7f27-eeb1-43c7-96b4-eb636467c8a1" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fcc45e4e-e739-4aed-9fdb-f9989ac68966" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

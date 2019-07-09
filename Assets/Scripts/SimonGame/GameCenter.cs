@@ -39,7 +39,6 @@ public class GameCenter : MonoBehaviour, IGameResult
 		simonGame = new SimonGame(this);
 
         HideIndicator();
-        //StartCoroutine(DisplayIndicators(new List<int> { 1, 2, 3 ,4 , 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, }));
     }
 
     void HideIndicator()
@@ -90,9 +89,9 @@ public class GameCenter : MonoBehaviour, IGameResult
     {
         foreach (int number in numberList) {
             HideIndicator();
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(.5f);
             DisplayIndicator(number);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(.5f);
         }
         HideIndicator();
     }

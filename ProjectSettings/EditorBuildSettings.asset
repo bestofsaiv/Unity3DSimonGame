@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Oculus/SampleFramework/Usage/CustomControllers.unity
-    guid: e0f49aa4174f98941b88699b5fecddc0
-  - enabled: 1
     path: Assets/Scenes/GameCenter.unity
     guid: 46af7d037b19344a78a00bd97dcee68a
+  - enabled: 1
+    path: Assets/Scenes/SimonGame3D.unity
+    guid: 9dede95c1123449b6b065fa41676cbc0
   m_configObjects: {}
