@@ -80,7 +80,7 @@ public class GameCenter : MonoBehaviour, IGameResult
     }
 
 
-    void CheckNumber(int number)
+    public void CheckNumber(int number)
 	{
 		simonGame.Guess(number);
 	}
