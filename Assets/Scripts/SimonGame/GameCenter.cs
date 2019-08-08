@@ -1,19 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.UI;
 using SimonGameApplication;
 
 //FIXME directly implement IGameResult is a bad idea
 public class GameCenter : MonoBehaviour, IGameResult
 {
     public Text Messageboard;
-	public Button ActionButton;
-	public Button buttonOne;
-	public Button buttonTwo;
-	public Button buttonThree;
-	public Button buttonFour;
+    
+    public Punchable ActionPunch;
+
+    public Punchable buttonOne;
+    public Punchable buttonTwo;
+    public Punchable buttonThree;
+    public Punchable buttonFour;
 
     public Image IndicatorOne;
     public Image IndicatorTwo;
@@ -25,11 +27,15 @@ public class GameCenter : MonoBehaviour, IGameResult
 
     void Start()
     {
-        ActionButton.onClick.AddListener(TaskOnClick);
-		buttonOne.onClick.AddListener(delegate      { CheckNumber(1); });
-		buttonTwo.onClick.AddListener(delegate      { CheckNumber(2); });
-		buttonThree.onClick.AddListener(delegate    { CheckNumber(3); });
-		buttonFour.onClick.AddListener(delegate     { CheckNumber(4); });
+
+        ActionPunch.onPunch += delegate { TaskOnClick();  };
+
+        buttonOne.onPunch += delegate { CheckNumber(1); };
+        buttonTwo.onPunch += delegate { CheckNumber(2); };
+        buttonThree.onPunch += delegate { CheckNumber(3); };
+        buttonFour.onPunch += delegate { CheckNumber(4); };
+
+       
 
         indicatorList = new List<Image>();
         indicatorList.Add(IndicatorOne);
