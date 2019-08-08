@@ -16,7 +16,7 @@ public class Puncher : MonoBehaviour
             OVRHaptics.RightChannel.Preempt(new OVRHapticsClip(noize, noize.Length));
         else if(gameObject.name == "LeftPuncher")
             OVRHaptics.LeftChannel.Preempt(new OVRHapticsClip(noize, noize.Length));
-        punchable.OnPunched(this);
+        punchable.Punch(this);
 
     }
 
